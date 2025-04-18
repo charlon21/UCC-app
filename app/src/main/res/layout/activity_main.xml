@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e3d844">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Header Section -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/headerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp">
+
+                <ImageView
+                    android:id="@+id/logoImageView"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/logo2" />
+
+                <TextView
+                    android:id="@+id/welcomeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:text="@string/ucc_mobile_napp"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/logoImageView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Navigation Menu Title -->
+            <TextView
+                android:id="@+id/navigationTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/navigation_menu"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <!-- Staff/Faculty Button -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/staffButton"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/btn_background_1">
+
+                <ImageView
+                    android:id="@+id/staffLightImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/light_1" />
+
+                <ImageView
+                    android:id="@+id/staffIconImageView"
+                    android:layout_width="97dp"
+                    android:layout_height="78dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.25"
+                    app:srcCompat="@drawable/staff" />
+
+                <TextView
+                    android:id="@+id/staffTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Staff/Faculty"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/staffIconImageView"
+                    app:layout_constraintStart_toStartOf="@+id/staffIconImageView"
+                    app:layout_constraintTop_toBottomOf="@+id/staffIconImageView" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Courses Button -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/coursesButton"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/btn_background_2">
+
+                <ImageView
+                    android:id="@+id/coursesLightImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/light_2" />
+
+                <ImageView
+                    android:id="@+id/coursesIconImageView"
+                    android:layout_width="97dp"
+                    android:layout_height="78dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.25"
+                    app:srcCompat="@drawable/courses" />
+
+                <TextView
+                    android:id="@+id/coursesTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Courses"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/coursesIconImageView"
+                    app:layout_constraintStart_toStartOf="@+id/coursesIconImageView"
+                    app:layout_constraintTop_toBottomOf="@+id/coursesIconImageView" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Admissions Button -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/admissionsButton"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/btn_background_4">
+
+                <ImageView
+                    android:id="@+id/admissionsLightImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/light_3" />
+
+                <ImageView
+                    android:id="@+id/admissionsIconImageView"
+                    android:layout_width="97dp"
+                    android:layout_height="78dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.25"
+                    app:srcCompat="@drawable/admissions" />
+
+                <TextView
+                    android:id="@+id/admissionsTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Admissions"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/admissionsIconImageView"
+                    app:layout_constraintStart_toStartOf="@+id/admissionsIconImageView"
+                    app:layout_constraintTop_toBottomOf="@+id/admissionsIconImageView" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Social Media Button -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/socialMediaButton"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/btn_background_3">
+
+                <ImageView
+                    android:id="@+id/socialMediaLightImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/light_4" />
+
+                <ImageView
+                    android:id="@+id/socialMediaIconImageView"
+                    android:layout_width="97dp"
+                    android:layout_height="78dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.25"
+                    app:srcCompat="@drawable/social" />
+
+                <TextView
+                    android:id="@+id/socialMediaTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Social Media"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/socialMediaIconImageView"
+                    app:layout_constraintStart_toStartOf="@+id/socialMediaIconImageView"
+                    app:layout_constraintTop_toBottomOf="@+id/socialMediaIconImageView" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- FAB -->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/emailFAB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="16dp"
+                android:contentDescription="@string/send_email_to_hod"
+                app:srcCompat="@android:drawable/ic_dialog_email" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

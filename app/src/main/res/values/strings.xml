@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MajorProject</string>
+    <string name="send_email_to_hod">Send Email to HOD</string>
+    <string name="ucc_mobile_napp">UCC Mobile \nApp</string>
+    <string name="navigation_menu">Navigation Menu</string>
+    <string name="staff_image_desc" />
+</resources>
